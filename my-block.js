@@ -4,7 +4,7 @@ wp.blocks.registerBlockType('acquirer/border-box', {
   category: 'common',
   attributes: {
     content: {
-      type: 'string'
+      type:   'string'
     },
     color: {
       type: 'string'

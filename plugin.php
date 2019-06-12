@@ -17,4 +17,12 @@ function load_my_block_files() {
 
 add_action('enqueue_block_editor_assets', 'load_my_block_files');
 
+function gutenberg_my_block_init() {
+  register_meta( 'post', 'author', array(
+    'show_in_rest' => true
+  ));
+}
+
+add_action('init', 'gutenberg_my_block_init');
+
 ?>
